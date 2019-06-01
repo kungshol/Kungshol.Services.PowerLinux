@@ -1,4 +1,5 @@
 ﻿using Kungshol.Services.PowerLinux.Controllers;
+using Kungshol.Services.PowerLinux.Ups;
 using Serilog.Core;
 using Xunit;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Serilog;
 using Process = System.Diagnostics.Process;
 
-namespace Kungshol.Services.PowerLinux.Controllers
+namespace Kungshol.Services.PowerLinux.Ups
 {
     public class UpsStatusService
     {

@@ -1,10 +1,11 @@
 ﻿using Kungshol.Services.PowerLinux.Controllers;
+using Kungshol.Services.PowerLinux.Ups;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Core;
-using Serilog.Core.Sinks;
 
 namespace Kungshol.Services.PowerLinux
 {
@@ -30,6 +31,7 @@ namespace Kungshol.Services.PowerLinux
                 {
                     services.AddSingleton(logger);
                     services.AddSingleton<UpsStatusService>();
+                    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
                 })
                 .UseSerilog(logger)
                 .UseKestrel(options => options.ListenAnyIP(5000))

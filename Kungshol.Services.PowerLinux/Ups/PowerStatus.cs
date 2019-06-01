@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace Kungshol.Services.PowerLinux.Controllers
+namespace Kungshol.Services.PowerLinux.Ups
 {
     public class PowerStatus
     {

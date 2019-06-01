@@ -1,12 +1,12 @@
-﻿namespace Kungshol.Services.PowerLinux.Controllers
+﻿namespace Kungshol.Services.PowerLinux.Ups
 {
     public class ParseError
     {
-        public string Error { get; }
-
         public ParseError(string error)
         {
             Error = error;
         }
+
+        public string Error { get; }
     }
 }

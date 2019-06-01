@@ -3,7 +3,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using Serilog;
 
-namespace Kungshol.Services.PowerLinux.Controllers
+namespace Kungshol.Services.PowerLinux.Ups
 {
     public class UpsStatus
     {
